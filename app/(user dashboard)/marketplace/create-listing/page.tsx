@@ -141,11 +141,6 @@ export default function Form() {
         }
       }
 
-      // // Append user data if needed
-      // if (user?.id) {
-      //   formData.append("userId", user.id);
-      // }
-
       // Use callApi instead of useSWRMutation
       const { data: response, error } = await callApi(
         "/api/v1/listing",
