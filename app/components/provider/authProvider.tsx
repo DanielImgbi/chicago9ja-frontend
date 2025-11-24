@@ -20,7 +20,7 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
   console.log(" <====  Auth provider ===> ");
 
   return (
-    <Suspense fallback={<Loader className="h-full w-full" />}>
+    <Suspense fallback={<Loader className="h-screen w-screen" />}>
       {isOpenPath ? children : <Protect>{children}</Protect>}
     </Suspense>
   );

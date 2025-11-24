@@ -148,7 +148,7 @@ export default function Form() {
 
       // Use callApi instead of useSWRMutation
       const { data: response, error } = await callApi(
-        "/listing",
+        "/api/v1/listing",
         "POST",
         formData
       );
